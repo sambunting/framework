@@ -1,11 +1,24 @@
 <?php
 
 	class App {
+		
+		public function initWhoops() {
+			$whoops = new \Whoops\Run;
+			$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+			$whoops->register();
+
+			return $this;
+		}
+
+
+
 		protected $controller = 'home';
 		protected $method = 'index';
 		protected $params = [];
 
 		public function __construct() {
+			$this->initWhoops();
+
 			$url = $this->phraseURL();
 
 			if (file_exists('../app/controllers/'.$url[0].'.php')) {
