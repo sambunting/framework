@@ -10,8 +10,6 @@
 			return $this;
 		}
 
-
-
 		protected $controller = 'home';
 		protected $method = 'index';
 		protected $params = [];

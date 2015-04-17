@@ -1,1 +1,1 @@
-This is the header
+<p>This is the header</p>

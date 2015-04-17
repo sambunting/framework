@@ -2,6 +2,7 @@
 	class Controller {
 
 		public function model($model) {
+			$_DATABASE_CONNECTION = new Database();
 			require_once '../app/models/'.$model.'.php';
 			return new $model();
 		}
