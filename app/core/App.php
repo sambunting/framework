@@ -1,7 +1,6 @@
 <?php
 
 	class App {
-<<<<<<< HEAD
 		
 		public function initWhoops() {
 			$whoops = new \Whoops\Run;
@@ -11,13 +10,13 @@
 			return $this;
 		}
 
-=======
->>>>>>> parent of 152b5a6... Added Whoops
 		protected $controller = 'home';
 		protected $method = 'index';
 		protected $params = [];
 
 		public function __construct() {
+			$this->initWhoops();
+
 			$url = $this->phraseURL();
 
 			if (file_exists('../app/controllers/'.$url[0].'.php')) {

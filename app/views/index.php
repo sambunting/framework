@@ -9,8 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="">
 
 		{% include 'templates/header.php' %}		
-		
-		<p>{{ title }} - {{ answer }}</p>
+	
+		<p>Body Content goes here</p>
 
 		{% include 'templates/footer.php' %}
 	</body>
